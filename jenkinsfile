@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Create Folder') {
+            steps {
+                bat 'mkdir myfolder'
+            }
+        }
+    }
+}
